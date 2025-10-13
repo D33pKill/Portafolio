@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomás Brogi - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Fondo Animado -->
+    <div class="animated-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="grid-pattern"></div>
+    </div>
+    
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Tomás Brogi</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#conocimientos" class="nav-link">Conocimientos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificados" class="nav-link">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Charlemos</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hola, soy Tomás Brogi</h1>
+                <h3>Estudiante de Ingeniería en Informática con pasión por el desarrollo de software y la inteligencia artificial.</h3>
+                <p>Mi pasión por la programación se combina con mi enfoque en el orden y la constancia para mejorar cada día.</p>
+                <p>Mi objetivo es seguir superando mis habilidades y aplicar mis conocimientos en proyectos reales.</p>
+                <p>Mi habilidad para trabajar en equipo, mi capacidad para resolver problemas y mi enfoque en lograr resultados hacen de mí un candidato ideal para cualquier empresa o proyecto en el campo del desarrollo de software.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+                    <a href="https://wa.me/56937244264?text=Hola%20Tomás,%20vi%20tu%20portafolio%20y%20me%20interesa%20conversar%20contigo" class="btn-secondary" target="_blank">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image-container">
+                    <img src="Imagen de WhatsApp 2025-10-13 a las 17.46.21_fd785b56.jpg" alt="Tomás Brogi" class="profile-image">
+                    <div class="profile-overlay">
+                        <i class="fas fa-code"></i>
+                        <span>Desarrollador</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project-main">
+                <div class="project-content">
+                    <h3>Blackjack con Inteligencia Artificial</h3>
+                    <p>Sistema de blackjack con detección automática de cartas usando OpenCV y análisis de estrategias básicas. Incluye interfaz web interactiva, lógica de juego completa y algoritmos de IA para optimizar las decisiones de juego. Desarrollado con Python, OpenCV y JavaScript.</p>
+                    <div class="project-tech">
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo-small">
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="tech-logo-small">
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <i class="fas fa-brain tech-icon-small"></i>
+                            <span>IA</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/D33pKill/blackjack.git" class="btn-primary" target="_blank">Ver en GitHub</a>
+                </div>
+                <div class="project-image">
+                    <div class="project-screenshot">
+                        <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=500&h=300&fit=crop&crop=center" alt="Blackjack AI Project" class="screenshot-img">
+                        <div class="project-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Ver Demo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="other-projects">
+                <h3>Otros proyectos</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=200&fit=crop&crop=center" alt="Calendario de Cultivo" class="card-screenshot">
+                            <div class="card-overlay">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Calendario de Cultivo</h4>
+                            <p>Aplicación web para gestión de calendarios de cultivo exterior. Desarrollada con React, TypeScript y Tailwind CSS. Incluye calendario semanal, configuración de plantas, fases de cultivo y funcionalidad de impresión/PDF.</p>
+                            <div class="project-tech">
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-logo-small">
+                                    <span>React</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="tech-logo-small">
+                                    <span>TypeScript</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="tech-logo-small">
+                                    <span>Tailwind</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/D33pKill/calendario.git" class="project-link" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop&crop=center" alt="Sistema de Envíos" class="card-screenshot">
+                            <div class="card-overlay">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Sistema de Envíos</h4>
+                            <p>Sistema completo de gestión de envíos con funcionalidades de seguimiento, administración y reportes. Desarrollado con tecnologías web modernas.</p>
+                            <div class="project-tech">
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-logo-small">
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-logo-small">
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/D33pKill/sistema-de-envios.git" class="project-link" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop&crop=center" alt="Evaluación de Ingeniería" class="card-screenshot">
+                            <div class="card-overlay">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Evaluación de Ingeniería</h4>
+                            <p>Proyecto académico de evaluación en ingeniería informática. Demuestra habilidades en desarrollo de software y metodologías de ingeniería.</p>
+                            <div class="project-tech">
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo-small">
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-logo-small">
+                                    <span>Docker</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-logo-small">
+                                    <span>Git</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/tobrogi/evaluacion_-_ing_inf" class="project-link" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Conocimientos -->
+    <section id="conocimientos" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <p>Estudiante de Ingeniería en Informática en Duoc UC, con un marcado interés en el desarrollo de software y la aplicación práctica de la inteligencia artificial en entornos reales. Poseo conocimientos sólidos en programación web, bases de datos y contenedores.</p>
+            
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3>Lenguajes y Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-logo">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-logo">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-logo">
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-logo">
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Diseño y Estilos</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="tech-logo">
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt tech-icon"></i>
+                            <span>Diseño Responsivo</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette tech-icon"></i>
+                            <span>Fundamentos de Diseño</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-logo">
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Contenedores y DevOps</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-logo">
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs tech-icon"></i>
+                            <span>Configuración de Entornos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Integraciones & APIs</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-plug tech-icon"></i>
+                            <span>APIs REST</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot tech-icon"></i>
+                            <span>LLMs con Ollama</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain tech-icon"></i>
+                            <span>Integración de IA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Herramientas de Desarrollo</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-logo">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code tech-icon"></i>
+                            <span>Lógica de Programación</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal tech-icon"></i>
+                            <span>Entornos Virtuales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formación Académica -->
+    <section id="certificados" class="certificates">
+        <div class="container">
+            <h2>Formación Académica</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Ingeniería en Informática</h3>
+                    <p><strong>Duoc UC</strong><br>2023 - Actualidad<br>Formación en desarrollo de software, redes, bases de datos, inteligencia artificial y arquitectura de sistemas.</p>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>Certificación AWS</h3>
+                    <p><strong>En curso</strong><br>Certificación en Amazon Web Services para fortalecer conocimientos en cloud computing y servicios en la nube.</p>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Idiomas</h3>
+                    <p><strong>Español:</strong> Nativo<br><strong>Inglés:</strong> Nivel intermedio (lectura y comprensión técnica fluida)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Más información</h2>
+            <p>Si desea más información puede contactarme para conversar de lo que necesite, con gusto le daré la información que requiera sin ningún compromiso.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <h3>Charlemos por teléfono</h3>
+                    <p>+56 9 3724 4264</p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Reclutame por correo</h3>
+                    <p>tomasbrogi.c@gmail.com</p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Santiago, Chile</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <h3>Conectemos!</h3>
+                <div class="social-grid">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/D33pKill" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://github.com/tobrogi" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Personal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/56937244264?text=Hola%20Tomás,%20vi%20tu%20portafolio%20y%20me%20interesa%20conversar%20contigo" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Contáctame</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tomás Brogi Castillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
