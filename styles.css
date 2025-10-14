@@ -822,6 +822,8 @@ body {
         width: 220px;
         height: 220px;
         margin: 0 auto;
+        overflow: visible; /* allow full image to show */
+        border-radius: 12px; /* reduce rounding on smaller screens */
     }
 
     .nav-container {
@@ -873,6 +875,24 @@ body {
     .profile-image-container {
         width: 180px;
         height: 180px;
+        overflow: visible;
+        border-radius: 10px;
+    }
+
+    .profile-image {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .profile-image-container:hover {
+        transform: none;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .profile-image-container:hover .profile-image {
+        transform: none;
     }
 
     .project-screenshot {
