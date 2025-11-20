@@ -441,4 +441,40 @@ document.addEventListener('DOMContentLoaded', () => {
         const originalText = heroTitle.textContent;
         typeWriter(heroTitle, originalText, 50);
     }
+    
+    // Cargar automáticamente las capturas de pantalla de los proyectos
+    loadProjectScreenshots();
 });
+
+// Función para cargar capturas de pantalla automáticamente basadas en los links
+function loadProjectScreenshots() {
+    // Configuración del servicio de screenshots (usando thum.io como ejemplo gratuito)
+    // Otros servicios posibles: microlink.io, screenshotapi.net, etc.
+    const getScreenshotUrl = (url) => `https://image.thum.io/get/width/800/crop/600/noanimate/${url}`;
+    
+    // 1. Para el proyecto principal (Blackjack)
+    const mainProjectImage = document.querySelector('.project-screenshot img');
+    const mainProjectLink = document.querySelector('.project-image a');
+    
+    if (mainProjectImage && mainProjectLink && mainProjectLink.href) {
+        mainProjectImage.src = getScreenshotUrl(mainProjectLink.href);
+        // Añadir manejo de errores por si falla la carga
+        mainProjectImage.onerror = () => {
+            mainProjectImage.src = 'img/blackjack.svg'; // Fallback
+        };
+    }
+
+    // 2. Para las tarjetas de proyectos (Grid)
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        const imageImg = card.querySelector('.card-screenshot');
+        // Buscar el enlace de demo. Asumimos que es el enlace que envuelve la imagen o un botón de "Ver Demo"
+        // En nuestra estructura actual, la imagen está envuelta en un <a> con el link del demo
+        const demoLink = card.querySelector('.project-card-image a');
+        
+        if (imageImg && demoLink && demoLink.href) {
+            imageImg.src = getScreenshotUrl(demoLink.href);
+        }
+    });
+}
