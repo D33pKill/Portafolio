@@ -373,7 +373,7 @@ function typeWriter(element, text, speed = 100) {
 
 // Animación especial del hero
 gsap.set(".hero-content h1", { opacity: 0, y: 50 });
-gsap.set(".hero-content h3", { opacity: 0, y: 30 });
+gsap.set(".hero-content h2, .hero-content h3", { opacity: 0, y: 30 });
 gsap.set(".hero-content p", { opacity: 0, y: 20 });
 gsap.set(".hero-buttons", { opacity: 0, y: 30 });
 gsap.set(".profile-image-container", { opacity: 0, scale: 0.8, rotation: -10 });
@@ -387,7 +387,7 @@ heroTl.to(".hero-content h1", {
     duration: 1,
     ease: "power2.out"
 })
-.to(".hero-content h3", {
+.to(".hero-content h2, .hero-content h3", {
     opacity: 1,
     y: 0,
     duration: 0.8,
@@ -413,6 +413,16 @@ heroTl.to(".hero-content h1", {
     duration: 1.2,
     ease: "back.out(1.7)"
 }, "-=0.5");
+
+// Animación continua del borde de la foto de perfil
+gsap.to("#profile-container", {
+    borderColor: "rgba(104, 211, 145, 0.8)",
+    boxShadow: "0 0 30px rgba(104, 211, 145, 0.6), 0 0 60px rgba(104, 211, 145, 0.3)",
+    duration: 2,
+    repeat: -1,
+    yoyo: true,
+    ease: "power2.inOut"
+});
 
 // Animación del botón de WhatsApp
 gsap.set(".whatsapp-btn", { scale: 0, opacity: 0 });

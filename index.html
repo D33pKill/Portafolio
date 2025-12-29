@@ -58,21 +58,19 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Hola, soy Tomás Brogi</h1>
-                <h3>Estudiante de Ingeniería en Informática con pasión por el desarrollo de software y la inteligencia artificial.</h3>
-                <p>Mi pasión por la programación se combina con mi enfoque en el orden y la constancia para mejorar cada día.</p>
-                <p>Mi objetivo es seguir superando mis habilidades y aplicar mis conocimientos en proyectos reales.</p>
-                <p>Mi habilidad para trabajar en equipo, mi capacidad para resolver problemas y mi enfoque en lograr resultados hacen de mí un candidato ideal para cualquier empresa o proyecto en el campo del desarrollo de software.</p>
+                <h2 class="hero-tagline">Desarrollador Full Stack | Especialista en IA & Front-end</h2>
+                <p class="hero-subtitle">Construyo interfaces modernas y soluciones inteligentes que optimizan procesos reales. Experiencia en proyectos comerciales con clientes reales.</p>
                 <div class="hero-buttons">
                     <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
                     <a href="https://wa.me/56937244264?text=Hola%20Tomás,%20vi%20tu%20portafolio%20y%20me%20interesa%20conversar%20contigo" class="btn-secondary" target="_blank">Contáctame</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="profile-image-container">
+                <div class="profile-image-container" id="profile-container">
                     <img src="Imagen de WhatsApp 2025-10-13 a las 17.46.21_fd785b56.jpg" alt="Tomás Brogi" class="profile-image">
                     <div class="profile-overlay">
                         <i class="fas fa-code"></i>
-                        <span>Desarrollador</span>
+                        <span>Desarrollador Full Stack</span>
                     </div>
                 </div>
             </div>
@@ -82,50 +80,171 @@
     <!-- Sección Proyectos -->
     <section id="proyectos" class="projects">
         <div class="container">
-            <h2>Proyectos</h2>
+            <h2>Proyectos Destacados</h2>
+            
+            <!-- Proyecto 1: Logisystem -->
             <div class="project-main">
                 <div class="project-content">
-                    <h3>Blackjack con Inteligencia Artificial</h3>
-                    <p>Sistema de blackjack con detección automática de cartas usando OpenCV y análisis de estrategias básicas. Incluye interfaz web interactiva, lógica de juego completa y algoritmos de IA para optimizar las decisiones de juego. Desarrollado con Python, OpenCV y JavaScript.</p>
+                    <span class="project-badge" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">✓ Proyecto Comercial</span>
+                    <h3>Logisystem - Sistema de Gestión Logística</h3>
+                    <p><strong>Proyecto vendido y en desarrollo activo.</strong> Plataforma web completa para gestión de movimientos logísticos en terreno. Diseño mobile-first con interfaz táctil optimizada para conductores, formularios inteligentes condicionales y vistas adaptativas según dispositivo.</p>
+                    <div class="project-tech">
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-logo-small">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" class="tech-logo-small">
+                            <span>Vite</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="tech-logo-small">
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <i class="fas fa-mobile-alt tech-icon-small"></i>
+                            <span>Mobile-First</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                        <a href="https://logisystem.netlify.app/" class="btn-primary" target="_blank">Ver Mockup Demo</a>
+                        <a href="https://github.com/D33pKill/Logisystem.git" class="btn-primary" target="_blank" style="background: rgba(104, 211, 145, 0.1); border: 1px solid rgba(104, 211, 145, 0.5);">Ver Código</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <div class="browser-dot red"></div>
+                                <div class="browser-dot yellow"></div>
+                                <div class="browser-dot green"></div>
+                            </div>
+                            <div class="browser-url">logisystem.netlify.app</div>
+                        </div>
+                        <div class="browser-content">
+                            <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=800&h=500&fit=crop" alt="Logisystem Dashboard" class="screenshot-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: BIBLIOX -->
+            <div class="project-main">
+                <div class="project-content">
+                    <span class="project-badge ai">AI Advanced Implementation</span>
+                    <h3>BIBLIOX</h3>
+                    <p>Asistente inteligente desarrollado con modelos de lenguaje avanzados. Implementación de flujos conversacionales para gestión de información.</p>
                     <div class="project-tech">
                         <div class="tech-item-small">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo-small">
                             <span>Python</span>
                         </div>
                         <div class="tech-item-small">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="tech-logo-small">
-                            <span>OpenCV</span>
-                        </div>
-                        <div class="tech-item-small">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
-                            <span>JavaScript</span>
+                            <i class="fas fa-robot tech-icon-small"></i>
+                            <span>LLM</span>
                         </div>
                         <div class="tech-item-small">
                             <i class="fas fa-brain tech-icon-small"></i>
                             <span>IA</span>
                         </div>
+                        <div class="tech-item-small">
+                            <i class="fas fa-comments tech-icon-small"></i>
+                            <span>NLP</span>
+                        </div>
                     </div>
-                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                        <a href="https://blackjackiatb.netlify.app/" class="btn-primary" target="_blank">Ver Demo</a>
-                        <a href="https://github.com/D33pKill/blackjack.git" class="btn-primary" target="_blank" style="background: rgba(104, 211, 145, 0.1); border: 1px solid rgba(104, 211, 145, 0.5);">Ver en GitHub</a>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                        <a href="https://github.com/Eltomass/BIBLIOX-RA2-.git" class="btn-primary" target="_blank">Ver en GitHub</a>
                     </div>
                 </div>
                 <div class="project-image">
-                    <a href="https://blackjackiatb.netlify.app/" target="_blank" style="text-decoration: none;">
-                        <div class="project-screenshot">
-                            <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800&h=600&fit=crop" alt="Blackjack Game" class="screenshot-img">
-                            <div class="project-overlay">
-                                <i class="fas fa-play-circle"></i>
-                                <span>Ver Demo</span>
-                            </div>
+                    <div class="project-screenshot">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop" alt="BIBLIOX AI Assistant" class="screenshot-img">
+                        <div class="project-overlay">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Assistant</span>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-            
+
+            <!-- Proyecto 3: Dolce Buchones -->
+            <div class="project-main">
+                <div class="project-content">
+                    <span class="project-badge ecommerce">Diseño UI/UX & Conversión</span>
+                    <h3>Dolce Buchones</h3>
+                    <p>Plataforma de catálogo comercial con experiencia móvil optimizada y gestión de productos.</p>
+                    <div class="project-tech">
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-logo-small">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-logo-small">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item-small">
+                            <i class="fas fa-shopping-cart tech-icon-small"></i>
+                            <span>E-commerce</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                        <a href="https://github.com/D33pKill/dolce_buchones.git" class="btn-primary" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="project-screenshot">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop" alt="Dolce Buchones E-commerce" class="screenshot-img">
+                        <div class="project-overlay">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Ver Catálogo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otros Proyectos -->
             <div class="other-projects">
-                <h3>Otros proyectos</h3>
+                <h3>Otros Proyectos</h3>
                 <div class="projects-grid">
+                    <!-- Blackjack con IA -->
+                    <div class="project-card">
+                        <div class="project-card-image">
+                            <a href="https://blackjackiatb.netlify.app/" target="_blank" style="text-decoration: none;">
+                                <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=200&fit=crop" alt="Blackjack Game" class="card-screenshot">
+                                <div class="card-overlay">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-card-content">
+                            <h4>Blackjack con Inteligencia Artificial</h4>
+                            <p>Sistema de blackjack con detección automática de cartas usando OpenCV y análisis de estrategias básicas. Incluye interfaz web interactiva, lógica de juego completa y algoritmos de IA para optimizar las decisiones de juego.</p>
+                            <div class="project-tech">
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo-small">
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" class="tech-logo-small">
+                                    <span>OpenCV</span>
+                                </div>
+                                <div class="tech-item-small">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                <a href="https://blackjackiatb.netlify.app/" class="project-link" target="_blank" style="background: rgba(104, 211, 145, 0.2); padding: 0.5rem 1rem; border-radius: 8px;">Ver Demo</a>
+                                <a href="https://github.com/D33pKill/blackjack.git" class="project-link" target="_blank">Ver en GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calendario de Cultivo -->
                     <div class="project-card">
                         <div class="project-card-image">
                             <a href="https://calendario-cultivo.netlify.app/" target="_blank" style="text-decoration: none;">
@@ -158,6 +277,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Sistema de Transporte -->
                     <div class="project-card">
                         <div class="project-card-image">
                             <a href="https://transporte-app-mockup.netlify.app/" target="_blank" style="text-decoration: none;">
@@ -190,33 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-card-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop&crop=center" alt="Evaluación de Ingeniería" class="card-screenshot">
-                            <div class="card-overlay">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                        </div>
-                        <div class="project-card-content">
-                            <h4>Evaluación de Ingeniería</h4>
-                            <p>Proyecto académico de evaluación en ingeniería informática. Demuestra habilidades en desarrollo de software y metodologías de ingeniería.</p>
-                            <div class="project-tech">
-                                <div class="tech-item-small">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo-small">
-                                    <span>Python</span>
-                                </div>
-                                <div class="tech-item-small">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-logo-small">
-                                    <span>Docker</span>
-                                </div>
-                                <div class="tech-item-small">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-logo-small">
-                                    <span>Git</span>
-                                </div>
-                            </div>
-                            <a href="https://github.com/tobrogi/evaluacion_-_ing_inf" class="project-link" target="_blank">Ver en GitHub</a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -226,7 +321,7 @@
     <section id="conocimientos" class="skills">
         <div class="container">
             <h2>Habilidades</h2>
-            <p>Estudiante de Ingeniería en Informática en Duoc UC, con un marcado interés en el desarrollo de software y la aplicación práctica de la inteligencia artificial en entornos reales. Poseo conocimientos sólidos en programación web, bases de datos y contenedores.</p>
+            <p>Estudiante de Ingeniería en Informática en Duoc UC, con experiencia comercial en desarrollo de software y soluciones para clientes reales. Especializado en aplicaciones web modernas, inteligencia artificial y arquitecturas mobile-first. He desarrollado y vendido proyectos funcionales aplicando metodologías ágiles y enfoque en UX.</p>
             
             <div class="skills-categories">
                 <div class="skill-category">
@@ -397,7 +492,7 @@
             <div class="social-links">
                 <h3>Conectemos!</h3>
                 <div class="social-grid">
-                    <a href="#" class="social-link">
+                    <a href="https://www.linkedin.com/in/tomas-brogi/" class="social-link" target="_blank">
                         <i class="fab fa-linkedin"></i>
                         LinkedIn
                     </a>
